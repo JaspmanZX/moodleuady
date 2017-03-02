@@ -8,10 +8,16 @@
       </div>
       <div class="list list-inset">
         <form>
-          <ion-input class="item item-input item-stacked-label">
+          <!--
+		  <ion-input class="item item-input item-stacked-label">
             <ion-label>{{ 'mm.login.siteaddress' | translate }}</ion-label>
             <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
           </ion-input>
+		  -->
+		  <ion-select ng-model="siteurl">
+			<ion-option value="https://intranet.matematicas.uady.mx/enlinea2/" selected="true">https://intranet.matematicas.uady.mx/enlinea2/</ion-option>
+			<ion-option value="https://intranet.matematicas.uady.mx/enlinea/" >Enlinea1</ion-option>
+		  </ion-select>
           <div class="item item-input padding">
               <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button>
               <!-- <input type="submit" class="button button-block" value="{{ 'mm.login.connect' | translate }}" > -->
