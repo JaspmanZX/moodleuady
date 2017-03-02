@@ -7,13 +7,6 @@
         <div class="item item-text-wrap">{{ 'mm.login.newsitedescription' | translate }}</div>
       </div>
       <div class="list list-inset">
-		<ion-item>
-			<ion-label>Gender</ion-label>
-			<ion-select [(ngModel)]="gender">
-				<ion-option value="f" selected="true">Female</ion-option>
-				<ion-option value="m">Male</ion-option>
-			</ion-select>
-		</ion-item>
         <form>
           <!--
 		  <ion-input class="item item-input item-stacked-label">
@@ -21,13 +14,19 @@
             <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
           </ion-input>
 		  -->
-		  <ion-item>
-			<ion-label>Gender</ion-label>
-			<ion-select [(ngModel)]="gender">
-				<ion-option value="f" selected="true">Female</ion-option>
-				<ion-option value="m">Male</ion-option>
-			</ion-select>
-		  </ion-item>
+		  <label class="item item-input item-select">
+			<div class="input-label">
+				Toppings
+			</div>
+			<select ng-model="siteurl">
+			  <option>Black Olives</option>
+			  <option selected>Bacon</option>
+			  <option>Extra Cheese</option>
+			  <option>Mushrooms</option>
+			  <option>Pepperoni</option>
+			  <option>Sausage</option>
+			</select>
+		  </label>
           <div class="item item-input padding">
               <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button>
               <!-- <input type="submit" class="button button-block" value="{{ 'mm.login.connect' | translate }}" > -->
