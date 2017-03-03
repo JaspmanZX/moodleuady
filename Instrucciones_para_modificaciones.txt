@@ -1,0 +1,26 @@
+
+Autor de las modificaciones originales: José Antonio Soto Puerto
+Correo electrónico: jose44_sp@hotmail.com
+
+============================
+Para compilar se utilizó la herramienta web: Adobe PhoneGap Build
+
+============================
+Si desea agregar una nueva Página de Moodle a la pantalla de inicio, debe:
+
+1.- Ir a core/components/login/templates/site.html
+2.- Ahí se encuentra el combobox donde están las opciones, aquí es donde puede añadir otras.
+
+============================
+Si desea agregar una nueva opción en la barra de menú lateral, debe:
+
+1.- Ir a build/lang/x.json
+2.- Agregar una nueva variable mm.sidemenu.x
+3.- Ir a core/components/sidemenu/templates/menu.html
+4.- Aquí podrá agregar una nueva barra en el menú lateral.
+
+============================
+Sitios de interés:
+
+- https://docs.moodle.org/dev/Moodle_Mobile_custom_apps#Overview
+- https://build.phonegap.com/apps
