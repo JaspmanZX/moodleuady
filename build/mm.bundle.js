@@ -51885,7 +51885,7 @@ angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
     "app_id" : "com.uady.moodlemobile",
-    "appname": "Moodle UADY",
+    "appname": "UADY Virtual",
     "versioncode" : "2017",
     "versionname" : "3.2.1",
     "cache_expiration_time" : 300000,

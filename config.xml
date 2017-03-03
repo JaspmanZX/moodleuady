@@ -5,10 +5,10 @@
         id        = "com.uady.moodlemobile"
         versionCode = "20170"
         version   = "3.2.1">
-    <name>Moodle UADY</name>
+    <name>UADY Virtual</name>
 
     <description>
-        Aplicación móvil de Moodle UADY
+        Aplicación móvil de UADY Virtual
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
